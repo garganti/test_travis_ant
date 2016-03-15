@@ -9,6 +9,11 @@ public class HelloWorldTest {
 	@Test
 	public void testHellowWorld(){
 		HelloWorld hello = new HelloWorld();
-		assertEquals("A test for Hello World String", "Hello THere", hello.sayHello());
+		//assertEquals("A test for Hello World String", "Hello World", hello.sayHello());
+		if (hello.sayHello().equals("Hello World")){
+			System.out.println("OK");
+		} else{
+			fail();
+		}
 	}
 }
