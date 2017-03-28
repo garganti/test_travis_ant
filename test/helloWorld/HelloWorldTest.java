@@ -11,7 +11,7 @@ public class HelloWorldTest {
 		HelloWorld hello = new HelloWorld();
 		String say = hello.sayHello();
 		// uso di assertE
-		assertEquals("A", say);
+		assertEquals("Hello World", say);
 		// oppure
 		if (say.equals("Hello World")){
 			System.out.println("OK");
